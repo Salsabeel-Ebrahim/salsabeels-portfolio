@@ -3,7 +3,7 @@ import React from 'react'
 import toast from 'react-hot-toast';
 
 export default function MagicButton({title , icon , position ,  onClick , otherClasses} : 
-    {title:string , icon: React.ReactNode , position:string , onClick?: ()=>void , otherClasses:string }) {
+    {title:string , icon: React.ReactNode , position:string , onClick?: ()=>void , otherClasses?:string }) {
  
     return (
     <>

@@ -39,7 +39,7 @@ export default function Approach() {
         <Card
          title="Development & Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up." >
+          description="This is where the magic happens! Based on the approved design, I translate everything into functional, responsive code and build your website from the ground up using tools like Git for version control and frameworks such as Next.js and React." >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"

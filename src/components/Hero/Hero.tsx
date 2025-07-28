@@ -13,19 +13,12 @@ import { socialMedia } from '../../../data';
 
 
 export default function Hero() {
-//   const copyEmailToClipboard = () => {
-//    const email = "salsabeelibrahem03@gmail.com";
-//    navigator.clipboard.writeText(email).then(
-//     ()=>{toast.success("Email copied!");}
-//    ).catch((err) => {
-//       console.error("Failed to copy!", err);
-//     });
-//  }
+
  
   return (
     <>
-  <div className=" "> 
-    {/* pt-36 pb-20  */}
+  <div className=" " id='home'> 
+ 
     <div className="">
         <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen'
         fill='white'/>
@@ -39,7 +32,7 @@ export default function Hero() {
         <div className="">
 
  <div className="flex h-screen w-full items-center justify-center 
-  bg-blackColor dark:bg-white relative">
+  bg-blackColor relative">
 
       <div
   className={cn(
@@ -52,7 +45,7 @@ export default function Hero() {
 
       {/* Radial gradient for the container to give a faded look */}
       <div className="pointer-events-none absolute inset-0 flex 
-      items-center justify-center bg-blackColor [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-white"></div>
+      items-center justify-center bg-blackColor [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] "></div>
     
    
    
@@ -71,7 +64,7 @@ export default function Hero() {
           Hi, I&apos;m Salsabeel Ebrahim, a Front End developer</p>
 
     
-    <Link href={ `${socialMedia[0].href  }`}>
+    <Link href={ `${socialMedia[0].href  }`} className='md:mt-10'>
                  <MagicButton title={" show my work"} icon={ <FaLocationArrow/> 
       }   
      position='right'/>

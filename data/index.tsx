@@ -2,8 +2,8 @@ export const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Relevant Experience", link: "#RelevantExperience" },
-  { name: "Approach", link: "#Approach" },
+   { name: "Relevant Experience", link: "#RelevantExperience" },
+   { name: "Approach", link: "#Approach" },
 
   
   { name: "Contact", link: "#contact" },
@@ -23,7 +23,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Time zone flexibility for smooth global collaboration",
     description: "",
     className: " lg:col-span-1 md:col-span-1 lg:min-h-[30vh] ",
     imgClassName: "",
@@ -55,8 +55,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Crafting Interfaces with Clean Code",
+    description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-2  lg:min-h-[60vh]",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -106,7 +106,7 @@ export const projects = [
     title: "Quiz App ",
     des: "fully customizable Quiz App that empowers users to create their own quiz experience",
     img: "/Quiz.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://salsabeel-ebrahim.github.io/Quiz-App/",
   },
   {
@@ -114,7 +114,7 @@ export const projects = [
     title: "Smart Bookmark Manager",
     des: " A small space for everyone to save their digital websites it allow you to :  Save the name of your important sites, Keep their links with just a click, Visit them whenever you need, Easily delete them",
     img: "/book.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://salsabeel-ebrahim.github.io/Book-Mark/",
   },
   {
@@ -122,7 +122,7 @@ export const projects = [
     title: "Random Quotes Generator",
     des: "A minimal and interactive app that generates inspirational quotes randomly at the click of a button. Each quote is displayed with smooth animations, encouraging users with fresh thoughts every time.",
     img: "/quote.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://salsabeel-ebrahim.github.io/Random-Qoutes/",
   },
   {
@@ -130,7 +130,7 @@ export const projects = [
     title: "Daniel's Portfolio",
     des: " A sleek and fully responsive personal portfolio template Designed to highlight creative work and professional experience, it offers a smooth user experience with elegant layout, animations, and intuitive navigation.",
     img: "/dan.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://salsabeel-ebrahim.github.io/Daniels/",
   },
   {
@@ -138,44 +138,11 @@ export const projects = [
     title: "Modal Image Slider",
     des: "A lightweight and responsive modal image slider built with pure JS. Navigate using buttons or arrow keys, with smooth transitions and accessible controls.",
     img: "/modal.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://salsabeel-ebrahim.github.io/Modal-Image-Slider/",
   },
 ];
 
-
-// export const companies = [
-//   {
-//     id: 1,
-//     name: "cloudinary",
-//     img: "/cloud.svg",
-//     nameImg: "/cloudName.svg",
-//   },
-//   {
-//     id: 2,
-//     name: "appwrite",
-//     img: "/app.svg",
-//     nameImg: "/appName.svg",
-//   },
-//   {
-//     id: 3,
-//     name: "HOSTINGER",
-//     img: "/host.svg",
-//     nameImg: "/hostName.svg",
-//   },
-//   {
-//     id: 4,
-//     name: "stream",
-//     img: "/s.svg",
-//     nameImg: "/streamName.svg",
-//   },
-//   {
-//     id: 5,
-//     name: "docker.",
-//     img: "/dock.svg",
-//     nameImg: "/dockerName.svg",
-//   },
-// ];
 
 export const relevantExperience= [
   {

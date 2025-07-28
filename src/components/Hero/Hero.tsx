@@ -1,12 +1,10 @@
 "use client";
-
 import { Spotlight } from '../ui/Spotlight'
 import { cn } from '@/lib/utils'
 import Link from 'next/link';
 import { TextGenerateEffect } from './../ui/TextGenerateEffect';
 import MagicButton from '../ui/MagicButton';
 import { FaLocationArrow } from 'react-icons/fa';
-import toast from 'react-hot-toast';
 import { socialMedia } from '../../../data';
 
 

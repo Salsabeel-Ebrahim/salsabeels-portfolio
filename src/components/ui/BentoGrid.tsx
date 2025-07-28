@@ -8,6 +8,7 @@ import animationData from '../../../data/confetti.json'
 import MagicButton from './MagicButton';
 import { IoCopyOutline } from "react-icons/io5";
 import { GiH2O } from "react-icons/gi";
+import {GlobeDemo} from './GridGlobe'
 export const BentoGrid = ({
   className,
   children,
@@ -83,6 +84,9 @@ imgClassName?:string,
 
         
 } </div>
+{
+  id===2 && <GlobeDemo/>
+}
 
 {id===6 && 
   <BackgroundGradientAnimation className="rounded-3xl">
@@ -93,43 +97,12 @@ imgClassName?:string,
       <div className={`transition w-full duration-200 group-hover/bento:translate-x-2
       relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 ${id===6 ? 'text-center md:text-start items-center justify-center' : '' }`}>
      
-        <div className={`font-sans font-bold text-lg lg:text-3xl w-fit z-10 max-w-96 text-white ${id===6 ? 'text-center md:text-start' : '' } `}>
+        <div className={`font-sans font-bold text-lg z-50 lg:text-3xl w-fit z-10 max-w-96 text-white ${id===6 ? 'text-center md:text-start' : '' } `}>
           {title}
         </div>
         <div className="font-sans text-xs md:text-sm  lg:text-base font-extralight  text-neutral-300">
           {description}
         </div>
-{/*       
-
- {id === 3 && (
-  <>
-    <h2 className="font-sans text-lg w-fit z-10 absolute left-4 font-bold text-white">
-      Tools I Love Working With
-    </h2>
-    <div className="flex gap-1 lg:gap-5 w-fit absolute right-[15px] bottom-[8%]">
-      <div className="flex gap-2 flex-col">
-        {["React.js", "Next.js", "TypeScript"].map((item) => (
-          <span
-            key={item}
-            className="py-2 lg:py-3 px-3 text-sm lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-          >
-            {item}
-          </span>
-        ))}
-      </div>
-      <div className="flex gap-2 flex-col">
-        {["JavaScript", "Tailwind CSS"].map((item) => (
-          <span
-            key={item}
-            className="py-2 lg:py-3 px-3 text-sm lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-          >
-            {item}
-          </span>
-        ))}
-      </div>
-    </div>
-  </>
-)} */}
 
 
 {id === 3 && (

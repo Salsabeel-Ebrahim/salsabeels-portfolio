@@ -1,8 +1,7 @@
 "use client";
  import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-
 export default function Approach() {
   return (
    
@@ -69,10 +68,11 @@ const Card = ({
       onMouseLeave={() => setHovered(false)}
       className="border  group/canvas-card flex items-center justify-center dark:border-black/[0.2] border-white/[0.2]  max-w-sm w-full mx-auto p-4 lg:h-[30rem] relative rounded-xl "
     >
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark: text-black  text-white " />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark: text-black  text-white " />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark: text-black  text-white " />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark: text-black  text-white " />
+<Icon className="absolute h-6 w-6 -top-3 -left-3 text-white dark:text-black" />
+<Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white dark:text-black" />
+<Icon className="absolute h-6 w-6 -top-3 -right-3 text-white dark:text-black" />
+<Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white dark:text-black" />
+
 
       <AnimatePresence>
         {hovered && (
@@ -113,7 +113,7 @@ const AceternityIcon = ({order}:{order:string}) => {
   );
 };
 
-export const Icon = ({ className, ...rest }:unknown) => {
+export const Icon = ({ className, ...rest }:React.SVGProps<SVGSVGElement>) => {
   return (
   <svg
       xmlns="http://www.w3.org/2000/svg"

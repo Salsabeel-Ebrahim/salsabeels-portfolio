@@ -9,6 +9,17 @@ import {
 } from "motion/react";
 import { cn } from "@/lib/utils";
 
+// ✅ Generic Button component
+type ButtonProps<T extends React.ElementType> = {
+  as?: T;
+  borderRadius?: string;
+  children: React.ReactNode;
+  containerClassName?: string;
+  borderClassName?: string;
+  duration?: number;
+  className?: string;
+} & React.ComponentPropsWithRef<T>;
+
 export function Button<T extends React.ElementType = "button">({
   as,
   borderRadius = "1.75rem",
@@ -18,15 +29,7 @@ export function Button<T extends React.ElementType = "button">({
   duration,
   className,
   ...otherProps
-}: {
-  as?: T;
-  borderRadius?: string;
-  children: React.ReactNode;
-  containerClassName?: string;
-  borderClassName?: string;
-  duration?: number;
-  className?: string;
-} & React.ComponentPropsWithoutRef<T>) {
+}: ButtonProps<T>) {
   const Component = as || "button";
 
   return (
@@ -35,14 +38,13 @@ export function Button<T extends React.ElementType = "button">({
         "relative md:col-span-2 overflow-hidden bg-transparent p-[1px] text-xl",
         containerClassName
       )}
-      style={{
-        borderRadius,
-      }}
+      style={{ borderRadius }}
       {...otherProps}
     >
       {children}
     </Component>
   );
 }
+
 
 

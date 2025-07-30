@@ -147,24 +147,32 @@ export const projects = [
 export const relevantExperience= [
   {
     id: 1,
+    title: "Front-End Developer Intern at Tech Cell (2025)",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+    desc: "It’s a chance for me to experience what real world work feels like. I’ll be collaborating with a team, communicating with backend and mobile developers, and simulating the kind of environment I hope to be part of in the future."
+  },
+  {
+    id: 2,
     title: "NTI Summer Internship Frontend Track (2025)",
    className: "md:col-span-2",
     thumbnail: "/exp4.svg",
     desc: "Gained hands-on experience in frontend technologies such as HTML, CSS and JavaScript through real-world projects and mentorship"
   },
   {
-    id: 2,
+    id: 3,
     title: "Frontend Web Development Diploma at Route Academy (2025)",
     desc: "Completed intensive training covering modern frontend tools and frameworks including React.js, Next.js and Tailwind CSS..." ,
    className: "md:col-span-2", 
     thumbnail: "/exp2.svg",
   },
   {
-    id: 3,
+    id: 4,
     title: "Mastering Computer Science  Diploma – Route Academy (2025)",
    className: "md:col-span-2", 
     thumbnail: "/exp3.svg",
     desc: "Covered core CS topics including data structures, algorithms, problem-solving and OOP", },
+  
   
 ];
 

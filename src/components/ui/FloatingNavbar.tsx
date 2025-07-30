@@ -15,8 +15,8 @@ export const FloatingNav = ({
 }: {
   navItems: {
     name: string;
-    link: string;
-    icon?: JSX.Element;
+     link: string;
+     icon?: JSX.Element;
   }[];
   className?: string;
 }) => {
@@ -60,7 +60,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem: unknown, idx: number) => (
+        {navItems.map((navItem: { name: string; link: string; icon?: JSX.Element }, idx: number) => (
           <a
             key={`link=${idx}`}
             href={navItem.link}
@@ -69,10 +69,10 @@ export const FloatingNav = ({
             )}
           >
             {/* <span className="block sm:hidden">{navItem.icon}</span> */}
-            <span className="block text-sm text-neutral-50">{navItem.name}</span>
+            <span className=" text-sm text-neutral-50 !cursor-pointer">{navItem.name}</span>
           </a>
         ))}
-      
+    
       </motion.div>
     </AnimatePresence>
   );

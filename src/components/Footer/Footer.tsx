@@ -8,11 +8,8 @@ import { socialMedia } from '../../../data'
 export default function Footer() {
   return (
     <>
-    <footer className='w-full pt-20 pb-10 ' id="contact">
-        <div className="w-full absolute left-0 -bottom-72 min-h-96">
-            <img src="/footer-grid.svg" alt="grid" 
-            loading="lazy" className='w-full h-full '/>
-        </div>
+    <footer className='w-full mb-[100px] pb-10 md:mb-5 ' id="contact">
+    
 
             <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[60vw] text-3xl md:text-5xl font-bold text-center">

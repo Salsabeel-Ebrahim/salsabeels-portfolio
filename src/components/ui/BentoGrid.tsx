@@ -85,7 +85,12 @@ imgClassName?:string,
         
 } </div>
 {
-  id===2 && <GlobeDemo/>
+  id===2 && 
+ 
+  <GlobeDemo />
+
+  
+ 
 }
 
 {id===6 && 

@@ -61,11 +61,18 @@ const Card = ({
   children?: React.ReactNode;
   description: string;
 }) => {
-  const [hovered, setHovered] = React.useState(false);
+  // const [hovered, setHovered] = React.useState(false);
+const [active, setActive] = React.useState(false);
+
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      // onMouseEnter={() => setHovered(true)}
+      // onMouseLeave={() => setHovered(false)}
+        onMouseEnter={() => setActive(true)}
+  onMouseLeave={() => setActive(false)}
+  onFocus={() => setActive(true)}
+  onBlur={() => setActive(false)}
+  tabIndex={0}
       className="border  group/canvas-card flex items-center justify-center dark:border-black/[0.2] border-white/[0.2]  max-w-sm w-full mx-auto p-4 lg:h-[30rem] relative rounded-xl "
     >
 <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white dark:text-black" />
@@ -75,10 +82,12 @@ const Card = ({
 
 
       <AnimatePresence>
-        {hovered && (
+        {active && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+
             className="h-full w-full absolute inset-0"
           >
             {children}

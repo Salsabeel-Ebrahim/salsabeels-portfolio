@@ -15,12 +15,7 @@ const config: Config = {
         inter: ["var(--font-inter)"],
       },
      colors: {
-  black: {
-    DEFAULT: "#000",
-    blackColor: "#000000", 
-   
- 
-  },
+    blackColor: "#000319",  
 }
 
     },

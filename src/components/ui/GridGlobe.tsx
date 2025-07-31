@@ -395,15 +395,22 @@ export function GlobeDemo() {
   ];
 
   return (
-    <div className="flex items-center justify-center absolute -left-5 top-36 md:top-40 h-full w-full
-   dark:bg-blackColor bg-white">
-      <div className=" overflow-hidden px-4 max-w-7xl h-96 mx-auto w-full relative ">
+   
 
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-blackColor dark:to-black z-40" />
-        <div className="absolute w-full  h-72 md:h-full z-10">
-          <World data={sampleArcs} globeConfig={globeConfig} />
-        </div>
-      </div>
+    < div className="flex items-center justify-center absolute -left-5 top-36 md:top-40 h-full w-full">
+
+  <div className="absolute inset-0 z-0 bg-blackColor transition-colors duration-500" />
+
+
+  <div className="relative z-10 overflow-hidden px-4 max-w-7xl h-96 mx-auto w-full">
+    <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent to-blackColor dark:to-black z-40" />
+    <div className="absolute w-full h-72 md:h-full z-10">
+      <World data={sampleArcs} globeConfig={globeConfig} />
     </div>
+  </div>
+
+
+</div>
+
   );
 }

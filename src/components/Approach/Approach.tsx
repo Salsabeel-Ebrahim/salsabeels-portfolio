@@ -4,13 +4,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 export default function Approach() {
   return (
-   
+
+
+
     <section className="py-20 w-full" id="Approach">
          <h1 className='heading text-center  text-3xl md:text-5xl mb-4 font-bold leading-snug md:leading-tight'>My
             <span className='text-violet-400'> approach</span>
         </h1>
 
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center  gap-4 ">
+      <div className="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center  gap-4 ">
         <Card
          title="Planning & Strategy" 
          icon={<AceternityIcon order="Phase 1 " />} 
@@ -21,6 +23,7 @@ export default function Approach() {
             containerClassName="bg-emerald-900"
           />
         </Card>
+
         <Card 
         title="Development & Progress Update" 
         icon={<AceternityIcon order="Phase 2" />}
@@ -61,24 +64,29 @@ const Card = ({
   children?: React.ReactNode;
   description: string;
 }) => {
-  // const [hovered, setHovered] = React.useState(false);
+
 const [active, setActive] = React.useState(false);
 
   return (
     <div
-      // onMouseEnter={() => setHovered(true)}
-      // onMouseLeave={() => setHovered(false)}
+     
         onMouseEnter={() => setActive(true)}
   onMouseLeave={() => setActive(false)}
   onFocus={() => setActive(true)}
   onBlur={() => setActive(false)}
   tabIndex={0}
-      className="border  group/canvas-card flex items-center justify-center dark:border-black/[0.2] border-white/[0.2]  max-w-sm w-full mx-auto p-4 lg:h-[30rem] relative rounded-xl "
+      className="
+      border  group/canvas-card flex items-center justify-center  border-white/[0.2]  max-w-sm w-full mx-auto p-4 h-[25rem] lg:h-[30rem] relative rounded-xl 
+      
+ "
+ 
+ 
+
     >
-<Icon className="absolute h-6 w-6 -top-3 -left-3 text-white dark:text-black" />
-<Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white dark:text-black" />
-<Icon className="absolute h-6 w-6 -top-3 -right-3 text-white dark:text-black" />
-<Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white dark:text-black" />
+<Icon className="absolute h-6 w-6 -top-3 -left-3 text-white " />
+<Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white " />
+<Icon className="absolute h-6 w-6 -top-3 -right-3 text-white " />
+<Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white " />
 
 
       <AnimatePresence>
@@ -95,15 +103,21 @@ const [active, setActive] = React.useState(false);
         )}
       </AnimatePresence>
 
-      <div className="relative z-20">
+      <div className="relative z-20 ">
         <div className="absolute top-[50%] left-[50%] -translate-[50%]
         text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center  ">
           {icon}
         </div>
-        <h2 className="text-2xl  md:text-3xl opacity-0 text-center group-hover/canvas-card:opacity-100 relative z-10 dark:text-black text-white  mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="text-2xl  md:text-3xl opacity-0 text-center group-hover/canvas-card:opacity-100 focus-within:opacity-100
+
+ 
+ relative z-10 dark:text-black text-white  mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
-        <p className=" text-sm opacity-0 text-center group-hover/canvas-card:opacity-100 relative z-10 dark:text-black text-white  mt-4  font-semibold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <p className=" text-sm opacity-0 text-center group-hover/canvas-card:opacity-100 focus-within:opacity-100
+
+ 
+ relative z-10 dark:text-black text-white  mt-4  font-semibold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {description}
         </p>
       </div>

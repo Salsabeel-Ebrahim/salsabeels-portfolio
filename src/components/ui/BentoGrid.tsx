@@ -111,7 +111,7 @@ imgClassName?:string,
 
 
 {id === 3 && (
-  <div className="px-4 absolute right-[15px] bottom-[8%] flex  lg:flex-row  items-start gap-4 lg:gap-2">
+  <div className="px-4 absolute right-[15px] bottom-[8%]  lg:bottom-[8%] flex  md:bottom-0 flex-row md:flex-col lg:flex-row  items-start gap-4 lg:gap-2">
     <h2 className=" font-sans text-lg font-bold text-white pt-4">
       Tools I Love Working With
     </h2>
@@ -157,7 +157,9 @@ imgClassName?:string,
         height={80}
         width={80} />
         </div>
-        <MagicButton  
+    
+
+            <MagicButton  
         
             title={copied ? "Email Copied!" : "Copy my email address"}
                 icon={
@@ -166,6 +168,8 @@ imgClassName?:string,
                 otherClasses="!bg-[#161A31]" 
                  onClick={handleCopy}
         />
+  
+      
                    </div>
 
 </>

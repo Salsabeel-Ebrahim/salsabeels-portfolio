@@ -96,7 +96,7 @@ export const projects = [
     title: "Dynamic Movie Platform",
     des: "A dynamic movie platform that displays categorized listings including Trending, Popular, Top Rated, and Upcoming titles, with real-time data updates via API integration",
     img: "/m.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+
     link: "https://salsabeel-ebrahim.github.io/Movie-App/",
   },
   {
@@ -104,7 +104,7 @@ export const projects = [
     title: "Quiz App ",
     des: "fully customizable Quiz App that empowers users to create their own quiz experience",
     img: "/Quiz.png",
-    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+
     link: "https://salsabeel-ebrahim.github.io/Quiz-App/",
   },
   {
@@ -112,24 +112,21 @@ export const projects = [
     title: "Smart Bookmark Manager",
     des: " A small space for everyone to save their digital websites it allow you to :  Save the name of your important sites, Keep their links with just a click, Visit them whenever you need, Easily delete them",
     img: "/book.png",
-    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://salsabeel-ebrahim.github.io/Book-Mark/",
+  link: "https://salsabeel-ebrahim.github.io/Book-Mark/",
   },
   {
     id: 6,
     title: "Random Quotes Generator",
     des: "A minimal and interactive app that generates inspirational quotes randomly at the click of a button. Each quote is displayed with smooth animations, encouraging users with fresh thoughts every time.",
     img: "/quote.png",
-    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://salsabeel-ebrahim.github.io/Random-Qoutes/",
+  link: "https://salsabeel-ebrahim.github.io/Random-Qoutes/",
   },
   {
     id: 7,
     title: "Daniel's Portfolio",
     des: " A sleek and fully responsive personal portfolio template Designed to highlight creative work and professional experience, it offers a smooth user experience with elegant layout, animations, and intuitive navigation.",
     img: "/dan.png",
-    // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://salsabeel-ebrahim.github.io/Daniels/",
+ link: "https://salsabeel-ebrahim.github.io/Daniels/",
   },
   {
     id: 8,
